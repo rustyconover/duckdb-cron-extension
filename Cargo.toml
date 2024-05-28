@@ -1,0 +1,18 @@
+[package]
+name = "duckdb-crontab-extension"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "crontab"
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = "0.4.38"
+chrono-tz = "0.9.0"
+croner = "2.0.4"
+duckdb = { path = "./duckdb-rs", features = ["vtab-loadable", "buildtime_bindgen"] }
+duckdb-loadable-macros = "0.1.1"
+libduckdb-sys = "0.10.2"
+
+
