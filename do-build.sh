@@ -25,7 +25,7 @@ install_name_tool -add_rpath $BUILD_ROOT/duckdb/build/debug/src/ \
 
 # There needs to be some signing step performed here to add metadata to the extension.
 cmake -DEXTENSION=$EXTENSION_FILE \
-  -DDUCKDB_VERSION="caef2cd0c7" \
+  -DDUCKDB_VERSION="2f818ce50d" \
   -DEXTENSION_VERSION="0.0.1" \
   -DPLATFORM_FILE=./duckdb_platform_out \
   -DNULL_FILE=./duckdb/scripts/null.txt \
